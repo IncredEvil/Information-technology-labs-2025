@@ -63,7 +63,7 @@
 
 Чтобы происходил запуск двух и более .yml и .yaml нужно указать через include название второго compose-файла:
 
-![Compose.yaml задание 5](./screens/5taskcomposeyamlafter.PNG)
+![Compose.yaml задание 5](./screens/5taskcomposeafter.PNG)
 
 ![Два compose задание 5](./screens/5taskmiltimpecompose.PNG)
 
@@ -81,4 +81,5 @@
 
 
 Вторая WARN здесь указывает на то, что созданный в уже удаленном compose.yaml контейнер task-portainer-1 стал "сиротой", иначе - в текущем состоянии он может быть не нужен, так как не указан в имеющемся docker-compose. Далее предлагается при помощи флага --remove-orphans (удалить "сирот"), т.е. запустить команду docker compose up -d --remove-orphans и контейнер-сирота task-portainer-1 удалится.
+
 
