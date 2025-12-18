@@ -43,7 +43,8 @@ Docker Compose позволяет определить многоконтейн�
 * `networks` — определение сетей
 
 ```bash
-GNU nano 8.4                                                                                                 docker-compose.yaml                                                                                                           services:
+GNU nano 8.4
+services:
   gitlab:
     image: gitlab/gitlab-ce:latest
     container_name: gitlab
